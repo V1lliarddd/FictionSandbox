@@ -1,0 +1,142 @@
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --base-100: #fff;
+  --base-200: #3a3a3a;
+  --base-300: #000;
+}
+
+body {
+  background-color: var(--base-300);
+  color: var(--base-100);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1,
+p {
+  line-height: 1;
+  user-select: none;
+}
+
+p {
+  text-decoration: none;
+  color: var(--base-100);
+  font-size: 1.5rem;
+}
+
+.preloader-counter {
+  position: fixed;
+  top: 50svh;
+  left: 2rem;
+  transform: translateY(-50%) scale(0.25);
+  transform-origin: left bottom;
+  will-change: transform;
+  z-index: 2;
+}
+
+.preloader-counter h1 {
+  font-size: clamp(2.5rem, 25vw, 25rem);
+}
+
+.introduce {
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  z-index: 1;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  will-change: clip-path;
+  z-index: -1;
+}
+
+.hero__bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  will-change: transform;
+}
+
+.header {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.header h1 {
+  font-size: clamp(5rem, 18vw, 20rem);
+}
+
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 2rem;
+  bottom: 6rem;
+  width: calc(100% - 4rem);
+  height: 1.5px;
+  background-color: var(--base-200);
+  transform-origin: left;
+  transform: scaleX(0);
+  will-change: transform;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-100);
+  transform-origin: left;
+  transform: scaleX(0);
+  will-change: transform;
+}
+
+.word,
+.char,
+.digit {
+  position: relative;
+  will-change: transform;
+}
+
+.header h1 .char {
+  transform: translateX(100%);
+}
+
+.introduce__logo .word,
+.footer p .word {
+  transform: translateY(100%);
+}
