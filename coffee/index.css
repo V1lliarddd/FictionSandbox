@@ -1,0 +1,64 @@
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #fcfcfc;
+  color: #141414;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+section {
+  position: relative;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+.hero,
+.outro {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.work-item {
+  height: 150svh;
+}
+
+.work-item__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 25%, 75% 40%, 100% 100%, 0% 100%);
+}
+
+.work-item__name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.work-item__name h2 {
+  color: #fff;
+}
