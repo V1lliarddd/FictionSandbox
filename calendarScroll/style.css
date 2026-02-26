@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --accent-1: #b1c0ef;
+  --accent-2: #f2acac;
+  --accent-3: #feff93;
+  --accent-4: #81b7bf;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Oswald", monospace;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-family: "Playfair Display", monospace;
+  font-size: 5rem;
+}
+
+p {
+  text-transform: uppercase;
+}
+
+.hero,
+.outro {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f9f4eb;
+  color: #141414;
+}
+
+.sticky-cards {
+  position: relative;
+  width: 100vw;
+  background-color: #0f0f0f;
+}
+
+.card {
+  position: sticky;
+  width: 100%;
+  height: 125svh;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transform-origin: 50% 50%;
+  will-change: transform;
+  text-align: center;
+}
+
+#card-1 .card__inner {
+  background-color: var(--accent-1);
+}
+
+#card-2 .card__inner {
+  background-color: var(--accent-2);
+}
+
+#card-3 .card__inner {
+  background-color: var(--accent-3);
+}
+
+#card-4 .card__inner {
+  background-color: var(--accent-4);
+}
+
+.card__inner-info {
+  width: 25%;
+  padding: 4rem;
+  text-align: left;
+}
+
+.card__inner-info p {
+  font-size: 0.9rem;
+}
+
+.card__inner-title h2 {
+  font-size: 10rem;
+  padding: 2rem 0;
+}
+
+.card__inner-description {
+  width: 60%;
+  margin: 0 auto 2em auto;
+}
+
+.card__inner-description p {
+  font-size: 1.5rem;
+}
+
+.card__inner-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+
+.card__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: var(--after-opacity, 0);
+  will-change: opacity;
+  pointer-events: none;
+  z-index: 2;
+}
