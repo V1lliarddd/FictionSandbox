@@ -19,3 +19,11 @@
 5. Draggable Works - draggable area, написана полностью на three.js
 
 `/draggableWorks/index.html`
+
+6. Liquid destruction - эффект исчезновения
+
+`/liquidDestruction/index.html`
+
+7. Dialect - слайдер в виде воронки
+
+`/dialect/index.html`
