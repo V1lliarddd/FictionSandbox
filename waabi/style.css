@@ -1,0 +1,97 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.project-list__project {
+  position: absolute;
+  width: 100%;
+  height: 100svh;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.minimap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: calc(250px + 3rem);
+  background-color: #fff;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.minimap__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.minimap__wrapper-img-preview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+}
+.img-preview__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.img-preview__item img,
+.project-list__project img {
+  position: relative;
+  transform: scale(1.5);
+  will-change: transform;
+}
+
+.minimap__wrapper-info-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.info-list__item {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  will-change: transform;
+}
+
+.info-list__item-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
