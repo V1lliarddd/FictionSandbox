@@ -27,3 +27,7 @@
 7. Dialect - слайдер в виде воронки
 
 `/dialect/index.html`
+
+8. cubeArt - превью в виде живых кубов
+
+`/cubeArt/index.html`
