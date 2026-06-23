@@ -35,3 +35,7 @@
 9. jumpingMarquee - лента картинок, которая следует за курсором
 
 `/jumpingMarquee/index.html`
+
+10. waveTransition - svg-переход при скролле
+
+`/svgWavePageTransition/index.html`
