@@ -31,3 +31,7 @@
 8. cubeArt - превью в виде живых кубов
 
 `/cubeArt/index.html`
+
+9. jumpingMarquee - лента картинок, которая следует за курсором
+
+`/jumpingMarquee/index.html`

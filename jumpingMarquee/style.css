@@ -1,0 +1,149 @@
+h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: .9;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.25;
+}
+
+.spotlight {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    background-color: #0f0f0f;
+}
+
+.spotlight-nav, .spotlight-footer {
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7a7a7a;
+}
+
+.spotlight-nav {
+    top: 0;
+}
+
+.spotlight-nav p {
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.spotlight-footer {
+    bottom: 0;
+}
+
+.spotlight-footer p {
+    text-align: center;
+    font-size: .6rem;
+    width: 30%;
+}
+
+.spotlight-marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    will-change: transform;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.spotlight-marquee-track {
+    display: flex;
+    flex-shrink: 0;
+    will-change: transform;
+}
+
+.marquee-items {
+    flex-shrink: 0;
+    width: 18rem;
+    padding: 0 0.5rem;
+}
+
+.marquee-items img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 6px;
+    background: #ddd;
+}
+
+.spotlight-content-wrapper {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+
+.spotlight-content-wrapper h1 {
+    text-align: center;
+    width: 15rem;
+}
+
+.spotlight-content-wrapper h3 {
+    width: 20rem;
+    text-align: center;
+}
+
+.spotlight-copy {
+    display: flex;
+    gap: 1rem;
+}
+
+.spotlight-copy p:nth-child(1) {
+    text-align: right;
+}
+
+.line {
+    position: relative;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .spotlight-footer p {
+        width: 100%;
+    }
+
+    .spotlight-content-wrapper {
+        width: 100%;
+        padding: 2rem;
+    }
+}
