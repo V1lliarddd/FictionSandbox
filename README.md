@@ -39,3 +39,7 @@
 10. waveTransition - svg-переход при скролле
 
 `/svgWavePageTransition/index.html`
+
+11. destroyTheIntro - intro анимация
+
+`/destroyTheInto/index.html`
